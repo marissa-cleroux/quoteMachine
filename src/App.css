@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Guntur|Open+Sans&display=swap");
+
+header {
+  font-family: "Hind Guntur", sans-serif;
+  text-align: left;
+  margin-left: 15px;
+}
+
+article {
+  font-family: "Open Sans", sans-serif;
+  width: 85%;
+  margin: auto;
+}
+
+#text {
+  font-size: 1.5em;
+}
+#author {
+  font-style: italic;
+  font-size: 1.4em;
+  margin: 20px 0 20px 20%;
+}
+
+#author::before {
+  content: "- ";
+}
