@@ -20,7 +20,7 @@ function Actions() {
   return (
     <div className="action">
       <a href="twitter.com/intent/tweet" id="tweet-quote">
-        <i className="fab fa-twitter" title="tweet this quote" />
+        <img src="./images/twitter.png" alt="twitter icon" className="icon" />
       </a>
       <button id="new-quote">New Quote</button>
     </div>
