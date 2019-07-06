@@ -13,14 +13,24 @@ article {
 }
 
 #text {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 #author {
   font-style: italic;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 20px 0 20px 20%;
 }
 
 #author::before {
   content: "- ";
+}
+
+.action {
+  text-align: center;
+}
+button {
+  margin: 0 20px 0 20px;
+}
+
+@media only screen and (min-width: 900px) {
 }

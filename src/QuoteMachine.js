@@ -18,11 +18,11 @@ function Author(props) {
 
 function Actions() {
   return (
-    <div>
-      <button id="tweet-quote" href="twitter.com/intent/tweet">
-        Tweet Quote
-      </button>
-      <button id="new-quote">Get a new Quote</button>
+    <div className="action">
+      <a href="twitter.com/intent/tweet" id="tweet-quote">
+        <i className="fab fa-twitter" title="tweet this quote" />
+      </a>
+      <button id="new-quote">New Quote</button>
     </div>
   );
 }
