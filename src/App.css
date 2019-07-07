@@ -33,8 +33,25 @@ button {
   margin: 0 20px 0 20px;
 }
 
+#tweet-quote {
+  position: relative;
+  min-width: 200px;
+}
+
 .icon {
-  height: 50px;
+  position: absolute;
+  height: 25px;
+}
+
+.button {
+  border: solid 1px darkgrey;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 @media only screen and (min-width: 900px) {
 }

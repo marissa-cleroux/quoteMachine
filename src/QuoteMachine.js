@@ -16,13 +16,17 @@ function Author(props) {
   return <div id="author">{props.Author}</div>;
 }
 
-function Actions() {
+function Actions(props) {
   return (
     <div className="action">
-      <a href="twitter.com/intent/tweet" id="tweet-quote">
+      <button id="new-quote" onClick={props.newQuote} className="button">
+        New Quote
+      </button>
+
+      <a href="twitter.com/intent/tweet" id="tweet-quote" className="button">
+        TWEET
         <img src="./images/twitter.png" alt="twitter icon" className="icon" />
       </a>
-      <button id="new-quote">New Quote</button>
     </div>
   );
 }
