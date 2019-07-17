@@ -40,6 +40,34 @@ function Actions(props) {
     </div>
   );
 }
+
+function Footer() {
+  return (
+    <footer>
+      <p>
+        All quotes scraped from{" "}
+        <a
+          href="https://www.goodreads.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          goodreads
+        </a>
+      </p>
+      <p>
+        Web scraping done by myself, API for quotes from women science fiction
+        authors created by myself can be found at:{" "}
+        <a
+          href="https://sci-fi-ladies-api.herokuapp.com/api/quote"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://sci-fi-ladies-api.herokuapp.com/api/quote
+        </a>
+      </p>
+    </footer>
+  );
+}
 function QuoteMachine(props) {
   return (
     <div>
@@ -49,6 +77,7 @@ function QuoteMachine(props) {
         <Author author={props.author} />
         <Actions newQuote={props.newQuote} />
       </main>
+      <Footer />
     </div>
   );
 }
