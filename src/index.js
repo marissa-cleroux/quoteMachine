@@ -5,7 +5,6 @@ import QuoteMachine from "./QuoteMachine";
 import * as serviceWorker from "./serviceWorker";
 
 let state = {};
-
 function getRandomQuote() {
   var proxyUrl = "https://cors-anywhere.herokuapp.com/",
     targetUrl = "https://sci-fi-ladies-api.herokuapp.com/api/quote";
@@ -35,8 +34,4 @@ function render() {
 }
 
 getRandomQuote();
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
