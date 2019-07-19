@@ -16,11 +16,13 @@ function Author(props) {
   return <div id="author">{props.author}</div>;
 }
 
-function Actions(props) {
+function Actions({ quote, author, newQuote }) {
+  let tweet = encodeURIComponent(quote + " - " + author);
+
   return (
     <div className="action">
       <a
-        href="https://twitter.com/intent/tweet"
+        href={"https://twitter.com/intent/tweet?text=" + tweet}
         id="tweet-quote"
         className="button"
         target="_blank"
@@ -28,13 +30,7 @@ function Actions(props) {
       >
         <img src="./images/twitter.png" alt="twitter symbol" className="icon" />
       </a>
-      <button
-        id="new-quote"
-        onClick={() => {
-          props.newQuote();
-        }}
-        className="button"
-      >
+      <button id="new-quote" onClick={newQuote} className="button">
         <img src="./images/next.png" alt="next quote" className="icon" />
       </button>
     </div>
@@ -75,9 +71,10 @@ function QuoteMachine(props) {
       <main id="quote-box">
         <Quote quote={props.quote} />
         <Author author={props.author} />
-        <Actions newQuote={props.newQuote} />
+        <Actions {...props} />
       </main>
       <Footer />
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" />
     </div>
   );
 }
