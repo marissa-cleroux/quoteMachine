@@ -54,11 +54,11 @@ function Footer() {
         Web scraping done by myself, API for quotes from women science fiction
         authors created by myself can be found at:{" "}
         <a
-          href="https://sci-fi-ladies-api.herokuapp.com/api/quote"
+          href="https://sci-fi-ladies-api.herokuapp.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://sci-fi-ladies-api.herokuapp.com/api/quote
+          https://sci-fi-ladies-api.herokuapp.com
         </a>
       </p>
     </footer>
